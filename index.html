@@ -7,6 +7,7 @@
   <title>Personal Portfolio Website</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
   <script src="https://kit.fontawesome.com/2b05088d83.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script> <!-- Asegúrate de incluir Typed.js -->
 </head>
 
 <body>
@@ -26,7 +27,7 @@
       </nav>
       <div class="header-text">
         <p>Full Stack Developer</p>
-        <h1>Hola!, soy <span>Brandon Camargo</span><br />de Bucaramanga Santander.</h1>
+        <h1>Hola!, soy <span>Brandon Camargo</span><br /><span class="typing"></span></h1>
       </div>
     </div>
   </div>
@@ -215,6 +216,13 @@
   </div>
 
   <script>
+    // Initialize Typed.js
+    var typed = new Typed('.typing', {
+      strings: ["De Bucaramanga Santander.", "Desarrollador de Software.", "Tengo 30 años.", "Tecnologo en Direccion de ventas.","Trabajo en Equipo."],
+      loop: true,
+      typeSpeed: 50,
+      backSpeed: 30
+    });
 
     var tablinks = document.getElementsByClassName('tab-links');
     var tabcontents = document.getElementsByClassName('tab-contents');
