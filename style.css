@@ -485,3 +485,40 @@ nav .fas {
     position: relative;
   }
 }
+
+
+/*-- -----------------------------css par avideos------------------------- */
+.projects video {
+  
+  width: 93%;
+  border-radius: 10px;
+  display: block;
+  transition: transform 0.5s;
+}
+
+.projects .layer {
+  
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), #f9a603);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 40px;
+  text-align: center;
+  font-size: 14px;
+  transition: height 0.5s;
+}
+
+.projects:hover video {
+  transform: scale(1.1);
+}
+
+.projects:hover .layer {
+  height: 100%;
+}
