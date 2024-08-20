@@ -52,6 +52,8 @@ nav ul li a {
   position: relative;
 }
 
+sub-title
+
 nav ul li a::after {
   content: '';
   width: 0;
@@ -116,6 +118,8 @@ p {
   color: #fff;
   margin-bottom: 10px;
 }
+
+
 
 .tab-titles {
   display: flex;
