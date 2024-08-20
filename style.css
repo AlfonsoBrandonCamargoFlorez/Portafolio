@@ -4,6 +4,30 @@ html {
   scroll-behavior: smooth;
 }
 
+
+/* Estilos para el menú de navegación */
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+}
+
+nav ul li a::after {
+  content: '';
+  width: 0;
+  height: 3px;
+  background: #0FC2C0; /* Color de la línea */
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: width 0.5s ease;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -151,7 +175,7 @@ p {
 }
 
 .tab-links.active-link::after {
-  width: 50%;
+  width: 105%;
 }
 
 .tab-contents ul li {
