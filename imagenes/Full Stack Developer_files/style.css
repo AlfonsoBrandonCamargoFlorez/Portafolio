@@ -641,14 +641,25 @@ nav .fas {
     flex-basis: 100%;
   }
 
-  
-
   .languages-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 40px;
-    margin-top: 50px;
+    grid-template-columns: repeat(3, 1fr); /* Dos filas de tres elementos cada una */
   }
+  
+  .languages-list div {
+    width: 100%; /* Asegura que las cajas ocupen el ancho completo disponible */
+    height: auto; /* Ajusta la altura automáticamente */
+    padding: 20px;
+  }
+
+  .languages-list div i {
+    font-size: 40px; /* Tamaño del icono para móviles */
+  }
+
+  .languages-list div h2 {
+    font-size: 16px; /* Tamaño del texto para móviles */
+  }
+
+  
 
   nav ul li a::after {
     content: '';
