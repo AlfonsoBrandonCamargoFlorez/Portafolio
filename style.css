@@ -4,8 +4,6 @@ html {
   scroll-behavior: smooth;
 }
 
-
-/* Estilos para el menú de navegación */
 nav ul li a {
   color: #fff;
   text-decoration: none;
@@ -13,13 +11,11 @@ nav ul li a {
   position: relative;
 }
 
-
-
 nav ul li a::after {
   content: '';
   width: 0;
   height: 3px;
-  background: #0FC2C0; /* Color de la línea */
+  background: #0FC2C0; 
   position: absolute;
   left: 0;
   bottom: -6px;
@@ -29,7 +25,6 @@ nav ul li a::after {
 nav ul li a:hover::after {
   width: 100%;
 }
-
 
 * {
   margin: 0;
@@ -41,6 +36,7 @@ nav ul li a:hover::after {
 body {
   background: #080808;
   color: #fff;
+  margin-right: 10px; /* Agregar margen a la derecha */
 }
 
 #header {
@@ -53,6 +49,7 @@ body {
 
 .container {
   padding: 10px 10%;
+  margin-right: 10px; /* Ajuste de margen derecho */
 }
 
 nav {
@@ -79,13 +76,11 @@ nav ul li a {
   position: relative;
 }
 
-sub-title
-
 nav ul li a::after {
   content: '';
   width: 0;
   height: 3px;
-  background: #0FC2C0; /* Cambiado */
+  background: #0FC2C0; 
   position: absolute;
   left: 0;
   bottom: -6px;
@@ -107,7 +102,7 @@ nav ul li a:hover::after {
 }
 
 .header-text h1 span {
-  color: #0FC2C0; /* Cambiado */
+  color: #0FC2C0; 
 }
 
 /*-- -----------------------------About me------------------------- */
@@ -151,8 +146,6 @@ p {
   margin-bottom: 10px;
 }
 
-
-
 .tab-titles {
   display: flex;
   margin: 20px 0 40px;
@@ -170,7 +163,7 @@ p {
   content: '';
   width: 0;
   height: 3px;
-  background: #0FC2C0; /* Cambiado */
+  background: #0FC2C0; 
   position: absolute;
   left: 0;
   bottom: -8px;
@@ -188,7 +181,7 @@ p {
 }
 
 .tab-contents ul li span {
-  color: #0FC2C0; /* Cambiado */
+  color: #0FC2C0; 
   font-size: 16px;
 }
 
@@ -203,6 +196,7 @@ p {
 /*-- -----------------------------languages------------------------- */
 #languages {
   padding: 30px 0;
+  margin-right: 10px; /* Ajuste de margen derecho */
 }
 
 .languages-list {
@@ -212,7 +206,7 @@ p {
   margin-top: 20px;
   justify-content: center;
   display: flex;
-  flex-direction:row;
+  flex-direction: row;
 }
 
 .languages-list img {
@@ -231,8 +225,8 @@ p {
   border-radius: 20px;
   transition: background 0.5s, transform 0.5s;
   text-align: center;
-  width: 220px; /* Ancho de cada caja */
-  height: 220px; /* Altura de cada caja */
+  width: 220px; 
+  height: 220px; 
 }
 
 .languages-list div i {
@@ -255,12 +249,11 @@ p {
 }
 
 .languages-list div:hover {
-  background: #0FC2C0; /* Cambiado */
+  background: #0FC2C0; 
   transform: translateY(-10px);
 }
 
 /*-- -----------------------------My projects------------------------- */
-
 #projects {
   padding: 50px 0;
 }
@@ -288,7 +281,7 @@ p {
 .layer {
   width: 100%;
   height: 0%;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), #0FC2C0); /* Cambiado */
+  background: linear-gradient(rgba(0, 0, 0, 0.6), #0FC2C0); 
   border-radius: 10px;
   position: absolute;
   left: 0;
@@ -311,7 +304,7 @@ p {
 
 .layer a {
   margin-top: 20px;
-  color: #0FC2C0; /* Cambiado */
+  color: #0FC2C0; 
   text-decoration: none;
   font-size: 18px;
   line-height: 60px;
@@ -355,7 +348,7 @@ p {
 }
 
 .contact-left p i {
-  color: #0FC2C0; /* Cambiado */
+  color: #0FC2C0; 
   margin-right: 15px;
   font-size: 25px;
 }
@@ -374,13 +367,13 @@ p {
 }
 
 .social-icons a:hover {
-  color: #0FC2C0; /* Cambiado */
+  color: #0FC2C0; 
   transform: translateY(-5px);
 }
 
 .btn.btn2 {
   display: inline-block;
-  background: #0FC2C0; /* Cambiado */
+  background: #0FC2C0; 
 }
 
 .contact-right form {
@@ -413,6 +406,18 @@ nav .fas {
 }
 
 @media only screen and (max-width: 600px) {
+  body {
+    margin-right: 10px; /* Ajuste de margen derecho */
+  }
+
+  #languages {
+    margin-right: 10px; /* Ajuste de margen derecho */
+  }
+
+  .container {
+    padding: 10px 5%;
+  }
+
   #header {
     background-image: url('./AvatarR.png');
   }
@@ -434,7 +439,7 @@ nav .fas {
   }
 
   nav ul {
-    background: #0FC2C0; /* Cambiado */
+    background: #0FC2C0; 
     position: fixed;
     top: 0;
     right: -200px;
@@ -443,6 +448,7 @@ nav .fas {
     padding-top: 50px;
     z-index: 2;
     transition: right 0.5s;
+    margin-right: 10px; /* Ajuste de margen derecho */
   }
 
   nav ul li {
@@ -483,165 +489,6 @@ nav .fas {
   .contact-right {
     flex-basis: 100%;
   }
-
-  .languages-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 40px;
-    margin-top: 50px;
-  }
-
-  nav ul li a::after {
-    content: '';
-    width: 0;
-    height: 3px;
-    background: #262626;
-    position: absolute;
-    left: 0;
-    bottom: -6px;
-    transition: 0.5s;
-  }
-
-  nav ul li a:hover::after {
-    width: 100%;
-  }
-
-  .tab-contents ul li {
-    list-style: none;
-    margin: 10px 0;
-    font-size: 12px;
-  }
-
-  .tab-contents ul li span {
-    color: #0FC2C0; /* Cambiado */
-    font-size: 14px;
-  }
-
-  .tab-links {
-    margin-right: 50px;
-    font-size: 18px;
-    font-weight: 500;
-    cursor: pointer;
-    position: relative;
-  }
-}
-
-/*-- -----------------------------css par avideos------------------------- */
-.projects video {
-  width: 93%;
-  border-radius: 10px;
-  display: block;
-  transition: transform 0.5s;
-}
-
-.projects .layer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 0;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), #0FC2C0); /* Cambiado */
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  padding: 0 40px;
-  text-align: center;
-  font-size: 14px;
-  transition: height 0.5s;
-}
-
-.projects:hover video {
-  transform: scale(1.1);
-}
-
-.projects:hover .layer {
-  height: 100%;
-}
-
-
-/* Justificar el texto en los elementos de las pestañas */
-.tab-contents p {
-  text-align: justify;
-  line-height: 1.6;
-}
-
-/* Ajustar el diseño en móviles */
-@media only screen and (max-width: 600px) {
-  /* Ajustes para el encabezado */
-  #header {
-    background-image: url('./AvatarR.png');
-  }
-
-  .header-text {
-    margin-top: 100%;
-    font-size: 16px;
-  }
-
-  .header-text h1 {
-    font-size: 30px;
-  }
-
-  nav .fas {
-    display: block;
-    font-size: 30px;
-    position: relative;
-    top: 13px;
-  }
-
-  nav ul {
-    background: #0FC2C0;
-    position: fixed;
-    top: 0;
-    right: -200px;
-    width: 200px;
-    height: 100%;
-    padding-top: 50px;
-    z-index: 2;
-    transition: right 0.5s;
-  }
-
-  nav ul li {
-    display: block;
-    margin: 25px;
-  }
-
-  nav ul .fas {
-    position: absolute;
-    top: 25px;
-    left: 25px;
-    cursor: pointer;
-  }
-
-  .sub-title {
-    font-size: 40px;
-  }
-
-  .about-col-1,
-  .about-col-2 {
-    flex-basis: 100%;
-  }
-
-  .about-col-1 {
-    margin-bottom: 30px;
-  }
-
-  .about-col-2 {
-    font-size: 14px;
-  }
-
-  .tab-links {
-    font-size: 16px;
-    margin-right: 20px;
-  }
-
-  .contact-left,
-  .contact-right {
-    flex-basis: 100%;
-  }
-
-  
 
   .languages-list {
     display: grid;
@@ -716,9 +563,4 @@ nav .fas {
   .projects:hover .layer {
     height: 100%;
   }
-
-  
-  
-
-  
 }
